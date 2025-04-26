@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather Forecast App</title>
   <meta name="description" content="Get real-time weather updates and forecasts.">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -21,11 +21,13 @@
 
     <!-- Search Section -->
     <section class="search">
-      <label for="locationInput" class="visually-hidden">Enter location</label>
-      <input type="text" id="locationInput" placeholder="Enter location..." />
-      <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
-      <button id="geoBtn" title="Use current location"><i class="fas fa-location-crosshairs"></i></button>
-    </section>
+  <label for="locationInput" class="visually-hidden">Enter location</label>
+  <input type="text" id="locationInput" placeholder="Enter location..." />
+  <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+  <button id="geoBtn" title="Use current location"><i class="fas fa-location-crosshairs"></i></button>
+  <button id="resetBtn" title="Reset fields"><i class="fas fa-rotate-left"></i> Reset</button> <!-- NEW -->
+</section>
+
 
     <!-- Current Weather Display -->
     <main>
