@@ -136,3 +136,20 @@ function updateWeatherForecast(data) {
     forecastContainer.appendChild(forecastDay);
   });
 }
+
+const resetBtn = document.getElementById('resetBtn'); // Grab reset button
+
+resetBtn.addEventListener('click', () => {
+  locationInput.value = ''; // Clear the input field
+  resetWeatherDisplay();    // Clear weather data
+});
+
+// Function to reset displayed weather and forecast
+function resetWeatherDisplay() {
+  document.getElementById('currentTemp').textContent = 'Temperature: --°C';
+  document.getElementById('currentCondition').textContent = 'Condition: --';
+  document.getElementById('currentHumidity').textContent = 'Humidity: --%';
+  document.getElementById('currentWind').textContent = 'Wind Speed: -- km/h';
+  document.getElementById('weatherIcon').innerHTML = ''; // Remove icon
+  document.getElementById('forecastContainer').innerHTML = ''; // Clear forecast
+}
