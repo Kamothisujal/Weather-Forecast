@@ -1,0 +1,118 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+  
+  .weather-app {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #0077b6;
+  }
+  
+  .search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .search input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .search button {
+    padding: 10px 12px;
+    border: none;
+    background: #0077b6;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .search button:hover {
+    background: #005f8f;
+  }
+  
+  .current-weather,
+  .forecast {
+    margin-top: 20px;
+  }
+  
+  .current-weather h2,
+  .forecast h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #023e8a;
+  }
+  
+  #currentWeatherContainer {
+    background: #f1f9ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .weather-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  #forecastContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  
+  .forecast-day {
+    background: #f1f9ff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .forecast-day img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Accessibility */
+  .visually-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+  
